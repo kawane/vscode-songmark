@@ -1,0 +1,36 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "songmark",
+	"patterns": [ 
+		{
+			"include": "#links"
+		},
+		{
+			"include": "#chords"
+		},
+		{
+			"include": "#metadata"
+		}
+	],
+	"repository": {
+		"links": {
+			"patterns": [{
+				"name": "markup.underline.link.songmark",
+				"match": "\\b(([^:/?#]+):)(//([^/?#]*))([^?#]*)(\\?([^#]*))?(#(.*))?\\b"
+			}]
+		},
+		"chords": {
+			"patterns": [{
+				"name": "keyword.other.songmark",
+				"match": "\\b((C|D|E|F|G|A|B)(b|#)?(m|M|min|maj|dim|Δ|°|ø|Ø)?((sus|add)?(b|#)?(2|4|5|6|7|9|10|11|13)?)*(\\+|aug|alt)?(\/(C|D|E|F|G|A|B)(b|#)?)?)\\b"
+			}]
+		},
+		"metadata": {
+			"patterns": [{
+				"name": "keyword.control.songmark",
+				"match": "^\\b([^\\:]+)\\b\\:"
+			}]
+		}
+	},
+	"scopeName": "source.song"
+}
