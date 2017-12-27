@@ -2,6 +2,9 @@
     "name": "vscode-songmark",
     "displayName": "Songmark language support",
     "description": "Songmark language support for Visual Studio Code.",
+    "repository": {
+        "url": "https://github.com/kawane/vscode-songmark"
+    },
     "version": "0.0.1",
     "publisher": "llgcode",
     "engines": {
